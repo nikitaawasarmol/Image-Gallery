@@ -1,10 +1,11 @@
-import { GoThreeBars } from 'react-icons/go';
+// import { GoThreeBars } from 'react-icons/go';
 import { NavLink as Link } from 'react-router-dom';
 import styled from "styled-components";
 
+
 export const Nav = styled.nav`
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     height: 95px;
     display: flex;
     flex-direction: row;
@@ -17,14 +18,14 @@ export const Nav = styled.nav`
 export const NavLogo = styled(Link)`
   cursor: pointer;
   font-family: cursive;
-  color: #fff;
+  color: black;
   font-size: 3rem;
   text-decoration: none;
 
 `;
 
 export const NavLink = styled(Link)`
-  color: #fff;
+  color: black;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -36,19 +37,19 @@ export const NavLink = styled(Link)`
   }
 `;
 
-export const Bars = styled(GoThreeBars)`
-  display: none;
-  color: #fff;
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-`;
+// export const Bars = styled(GoThreeBars)`
+//   display: none;
+//   color: #fff;
+//   @media screen and (max-width: 768px) {
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     transform: translate(-100%, 75%);
+//     font-size: 1.8rem;
+//     cursor: pointer;
+//   }
+// `;
 
 export const NavMenu = styled.div`
   display: flex;
@@ -73,7 +74,7 @@ export const NavBtn = styled.nav`
 export const NavBtnLink = styled(Link)`
   border-radius: 10px;
   padding: 9px 20px;
-  color: #fff;
+  color: #black;
   outline: none;
   border: 1px solid #fff;
   cursor: pointer;
