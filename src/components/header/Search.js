@@ -2,7 +2,7 @@ import axios from 'axios'
 // import { response } from 'express'
 import React, {useState } from 'react'
 // import styled from "styled-components";
-import  {format} from "date-fns"
+// import  {format} from "date-fns"
 // const Input = styled.input`
 //   @media only screen and (min-width: 150px) and (max-width: 780px) {
 //     width: 95px;
@@ -39,12 +39,13 @@ function Search() {
       <input 
       style={{
        textAlign: "start",
-       border: "none",
+       border: "1px solid",
        width: "1000px",
        display: 'inline-flex',
        maxWidth: "300px",
-       padding: "15px",
-       borderRadius: "10px",
+       padding: "13.5px",
+      borderTopLeftRadius: "10px",
+      borderBottomLeftRadius: "10px",
        flexGrow: "1",
      }}
 
@@ -68,15 +69,16 @@ function Search() {
    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 pt-5">
      {result.map((value) => {
            return (   
-             <div className="shadow-md bg-white rounded-3xl">
-              <img className="h-52 w-full object-cover rounded-3xl md:h-80" alt='image' src={value.urls.small} loading="lazy" />
+             <div className="shadow-md bg-white rounded-2xl">
+              <img className="h-52 w-full object-cover rounded-2xl md:h-80" alt="" src={value.urls.small} loading="lazy" />
              
             <article className="flex items-center justify-between">
             <div className="pt-2 p-2 flex items-center justify-start">
                <img 
                src={value.user.profile_image.large} 
                loading="lazy" 
-               className="w-20 rounded-full shadow"/>
+               className="w-20 rounded-full shadow"
+               alt = ""/>
                
                <ul className="ml-3">
                  <li className="font-bold text-lg text-slate-800 mb-1">{value.user.name}</li>
