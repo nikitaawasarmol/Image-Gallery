@@ -1,6 +1,7 @@
 import React from 'react'
 // import {Link} from "react-router-dom";
-import { Nav, NavLogo, NavLink, Bars, NavMenu, NavBtn, NavBtnLink,} from "./NavBarElements";
+import { Nav, NavLogo, NavLink, NavMenu, NavBtn, NavBtnLink,} from "./NavBarElements";
+// import { Fabars } from 'react-icons/fa'
 
 const NavBar = () => {
   return (
@@ -9,7 +10,7 @@ const NavBar = () => {
             <NavLogo to="/">
                 Photo Gallery
             </NavLogo>
-            <Bars />
+            <button background-color="black">Dark Mode</button>
 
             <NavMenu>
 
@@ -31,11 +32,11 @@ const NavBar = () => {
                 Buy
                 </NavLink>
 
-                <NavLink 
+                {/* <NavLink 
                 to="/" 
                 activeStyle={{color: 'black'}}>
                 Community
-                </NavLink>
+                </NavLink> */}
 
                 <NavBtn>
                     <NavBtnLink to="/">Sign Up</NavBtnLink>
@@ -44,6 +45,7 @@ const NavBar = () => {
 
             </NavMenu>
         </Nav>
+        
     </>
   )
 }
