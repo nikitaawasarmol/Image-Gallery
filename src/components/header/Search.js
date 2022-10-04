@@ -10,7 +10,6 @@ import React, {useState } from 'react'
 //   }
 // `
 function Search() {
-  
   const [image, setImage] = useState("")
   const [result, setResult] = useState([])
 
@@ -33,7 +32,6 @@ function Search() {
   //     console.log(err)
   //   })
   // })
-  
   return (
     <>
     <div>
@@ -49,6 +47,7 @@ function Search() {
       borderTopLeftRadius: "10px",
       borderBottomLeftRadius: "10px",
        flexGrow: "1",
+       color: 'black',
      }}
 
      type="text" 
@@ -69,11 +68,9 @@ function Search() {
 
 
    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 pt-5">
-    
      {result.map((value) => {
            return (   
-             <div 
-             className="shadow-md bg-white rounded-2xl">
+             <div className="shadow-md bg-white rounded-2xl">
               <img className="h-52 w-full object-cover rounded-2xl md:h-80" alt="" src={value.urls.small} loading="lazy" />
              
             <article className="flex items-center justify-between">
