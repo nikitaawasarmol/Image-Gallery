@@ -3,14 +3,22 @@ import React from 'react'
 import { Nav, NavLogo, NavLink, NavMenu, NavBtn, NavBtnLink,} from "./NavBarElements";
 // import { Fabars } from 'react-icons/fa'
 
+    
 const NavBar = () => {
+    let myStyle = {
+        color: 'white',
+        backgroundColor: 'black'
+    }
+
+ 
+  
   return (
     <>
-        <Nav>
+        <Nav style={myStyle}>
             <NavLogo to="/">
                 Photo Gallery
             </NavLogo>
-            <button background-color="black">Dark Mode</button>
+            
 
             <NavMenu>
 
@@ -50,4 +58,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default NavBar;

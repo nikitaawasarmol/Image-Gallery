@@ -5,7 +5,6 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     background: white;
-    color: black;
     height: 95px;
     display: flex;
     flex-direction: row;
@@ -18,14 +17,12 @@ export const Nav = styled.nav`
 export const NavLogo = styled(Link)`
   cursor: pointer;
   font-family: cursive;
-  color: black;
   font-size: 3rem;
   text-decoration: none;
 
 `;
 
 export const NavLink = styled(Link)`
-  color: black;
   display: flex;
   align-items: center;
   text-decoration: none;
